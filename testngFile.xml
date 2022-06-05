@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="EndToEndFlowSuite" verbose="1">
+
+	<test name="FacebookTest">
+		<parameter name="url" value="https://www.facebook.com" />
+		<classes>
+			<class name="com.wallethub.tests.FacebookTest" />
+		</classes>
+	</test>
+
+	<test name="WallethubTests">
+		<parameter name="url"
+			value="https://www.wallethub.com/profile/68565950i" />
+		<classes>
+			<class name="com.wallethub.tests.ReviewSubmissionTest" />
+		</classes>
+	</test>
+
+</suite>
